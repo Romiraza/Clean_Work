@@ -1,0 +1,1486 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.width{
+    width: 100% !important;
+}
+
+.width-50{
+    width: 50%;
+}
+
+.mr-4px{
+    margin-right: 4px;
+}
+
+.mr-8px{
+    margin-right: 8px;
+}
+
+.mr-16px{
+    margin-right: 16px;
+}
+
+.ml-8px{
+    margin-left: 8px;
+}
+
+.ml-16px{
+    margin-left: 16px;
+}
+
+.ml-24px{
+    margin-left: 24px;
+}
+
+.ml-48px{
+    margin-left: 48px !important;
+}
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+.mb-4px{
+    margin-bottom: 4px;
+}
+
+.mb-8px{
+    margin-bottom: 8px;
+}
+
+.mb-16px{
+    margin-bottom: 16px;
+}
+
+.mb-24px{
+    margin-bottom: 24px;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.mt-4px{
+    margin-top: 4px;
+}
+
+.mt-8px{
+    margin-top: 8px;
+}
+
+.mt-16px{
+    margin-top: 16px;
+}
+
+.mt-24px{
+    margin-top: 24px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.align-item-end{
+    align-items: flex-end !important;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.d-block{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.txt-white{
+    color: white !important;
+}
+
+.p-abs{
+    position: absolute;
+}
+
+p{
+    color: #717275;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ratio-0{
+    aspect-ratio: 0 !important;
+}
+
+/* HEADER-SECTION.......
+...............START */
+
+.header{
+    background-color: #7cb8eb;
+    position: relative;
+    z-index: 22;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.header-icon{
+    color: white;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.header-para{
+    font-size: 14px;
+    color: white;
+    margin-right: 24px;
+}
+
+.header-strong{
+    margin-right: 8px;
+}
+
+.header-right-section{
+    margin-left: auto !important;
+}
+
+.header-number{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar{
+    background: transparent;
+    position: absolute;
+    top: 49px;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-section{
+    color: black;
+    text-decoration: none;
+    margin-right: 16px;
+    padding: 5px 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.logo{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+
+.logo-txt{
+    color: white;
+    margin-left: 16px;
+}
+
+
+
+.menu-bar{
+    margin-left: auto !important;
+}
+
+.menu-bar-ul{
+    display: flex;
+    list-style: none;
+}
+
+.m-l{
+    margin-left: 16px;
+}
+
+.nav-link{
+    color: white;
+    margin: 20px;
+    padding: 0;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link:hover{
+    color: #7cb8eb;
+    background: transparent;
+}
+
+.active{
+    color: #7cb8eb !important;
+    background: transparent;
+}
+
+.drop-down{
+    position: relative;
+}
+
+.drop-down-menu{
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    min-width: 9rem;
+    margin-top: 20px;
+    padding: 13px 0 10px 0;
+    transition: all 0.3s;
+    pointer-events: none;
+    margin: 0;
+    list-style: none;
+    border-radius: .25rem;
+}
+
+.drop-down-menu::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid white;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.drop-down-item{
+    display: inline-block;
+    color: #717275;
+    font-weight: 500;
+    padding: .25rem 1rem;
+    padding-top: 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.drop-down-item:hover{
+    color: #7cb8eb;
+}
+
+.drop-down:hover .drop-down-menu {
+    opacity: 1;
+    margin-top: 0;
+    pointer-events: auto;
+}
+
+.button{
+    margin-top: 8px;
+    margin-right: 16px;
+    padding: 12px 25px;
+    border-radius: 100px;
+    border: 2px solid white;
+}
+
+.button:hover{
+    border: 2px solid #7cb8eb;
+    background-color: #7cb8eb;
+    color: white;
+    transition: 0.5s;
+}
+
+/* HEADER..........
+...............END */
+
+/* HERO-SECTION.........
+..................START */
+
+.hero-section{
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+    padding-top: 100px;
+    min-height: 680px;
+    z-index: 0;
+    background-image: url(images/afro-woman-holding-bucket-with-cleaning-items.jpg);
+    background-position: bottom;
+    background-size: cover;
+    animation: change 10s infinite ease-in;
+}
+
+@keyframes change{
+    50%{
+        background-image: url('images/unrecognizable-cleaner-walking-into-hotel-room-with-tools-detergents.jpg');
+    }
+
+    80%{
+        background-image: url('images/afro-woman-cleaning-window-with-rag-home.jpg');
+    }
+}
+
+.section-overlay{
+    background-color: #4f83d1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.section-parent-div{
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #e5e50f;
+    font-size: 52px;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(3) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -270px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    /* border-left: 2px solid #e5e50f;
+    animation: typing 4s steps(5) infinite; */
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
+
+.section-heading{
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
+
+.section-heading-btn{
+    display: inline-block;
+    position: relative;
+    background: #4f83d1;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    transition: 0.5s;
+    padding: 15px 25px;
+}
+
+.border-btn{
+    border: 2px solid white;
+    background-color: transparent;
+    margin-left: 16px;
+}
+
+.border-btn:hover{
+    background: #7cb8eb;
+    border: 2px solid transparent;
+}
+
+.marquee{
+    width: 100%;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    border-radius: 100px;
+    opacity: 0;
+    color: white;
+    padding: 15px 0;
+    font-style: italic;
+}
+
+.section-heading-btn:hover .marquee{
+    width: 100%;
+    opacity: 1;
+    background-color: #7cb8eb;
+    border: 2px solid transparent;
+    color: white;
+}
+
+.hero-section-svg{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* HERO-SECTION..........
+..................END */
+
+/* INTRO-SECTION.........
+....................START */
+
+.intro-section{
+    padding-top: 50px;
+}
+
+.intro-left-section{
+    width: 48%;
+}
+
+.intro-heading{
+    font-size: 46px;
+    color: black;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.intro-first-para{
+    color: #717275;
+    margin-bottom: 16px;
+}
+
+.first-para-link{
+    color: #7cb8eb;
+    transition: 0.5s;
+}
+
+.first-para-link:hover{
+    color: #4f83d1;
+}
+
+.intro-right-section{
+    width: 48%;
+    position: relative;   
+}
+
+.right-section-img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.right-section-absolute-div{
+    position: absolute;
+    bottom: 1px;
+    right: -15px;
+    padding: 30px 35px;
+    background-color: #7cb8eb;
+    border-radius: 10px;
+}
+
+.absolute-white-txt-heading{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.absolute-white-txt-para{
+    color: white;
+}
+
+.phone-icon{
+    font-size: 18px;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+/* INTRO-SECTION.......
+...................END */
+
+/* BEST-SERVICES-SECTION.............
+.........................START */
+
+.best-services-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f0f8ff;
+}
+
+.best-services-main-content{
+    background-color: white;
+    width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+    padding-right: 15px;
+    margin-bottom: 24px;
+}
+
+.img-section{
+    width: 41%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-section:hover .services-img-hover{
+    opacity: 1;
+}
+
+.services-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.services-img-hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.services-img-txt{
+    background-color: #4f83d1;
+    color: white !important;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: opacity 0.5s;
+    padding: 8px 16px;
+}
+
+.services-img-txt-para{
+    color: white !important;
+}
+
+.clock-icon{
+    font-size: 18px;
+}
+
+.txt-section{
+    width: 59%;
+    padding: 0 24px;
+}
+
+.txt-section-heading{
+    color: #7cb8eb;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.txt-section-heading:hover{
+    color: #4f83d1;
+}
+
+.txt-section-para{
+    color: #717275;
+    margin-bottom: 16px;
+}
+
+.checked{
+    color: #4f83d1;
+}
+
+.fa-star{
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+.txt-section-btn{
+    margin-left: auto !important;
+    margin-top: 8px;
+}
+
+/* BEST-SERVICES-SECTION.............
+.........................END */
+
+
+/* customer-reviews-section............
+..............................start */
+
+.customer-reviews-section{
+    background-image: url('images/coffe-shop-with-wooden-walls-unfocused.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #f0f8ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-overlay-opacity{
+    opacity: 0.85;
+}
+
+.customer-reviews-heading{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.customer-reviews-parent{
+    width: 32%;
+    position: relative;
+}
+
+.customers{
+    background-color: #7cb8eb;
+    border-radius: 20px;
+    margin-bottom: 24px;
+    padding: 30px;
+}
+
+.customer-img{
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.customer-name{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.customer-details{
+    color: white;
+}
+
+/* customer-reviews-section............
+..............................end */
+
+/* BRAND-PARTNERS-SECTION......
+.......................START */
+
+.brand-partners{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.company-name{
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: -50px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.company-logo{
+    width: 83%;
+}
+
+.partner-image{
+    display: block;
+    width: 150px;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.partner-image:hover{
+    transform: scale(1.05);
+}
+
+/* BRAND-PARTNERS-SECTION......
+.......................END*/
+
+
+/* FOOTER...........START */
+
+.footer{
+    background-color: #7cb8eb;
+    padding-top: 50px;
+}
+
+.footer-menu-parent{
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.footer-menu{
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu-items{
+    list-style: none;
+    display: block;
+}
+
+.footer-menu-links{
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.footer-menu-links:hover{
+    color: #4f83d1;
+}
+
+.footer-menu-links-icons{
+    color: white;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.footer-menu-links-icons:hover{
+    color: #4f83d1;
+}
+
+.footer-left-section{
+    width: 41%;
+}
+
+.footer-section-title{
+    color: white;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-menu-link-icon{
+    margin-right: 8px;
+}
+
+.footer-mid-section{
+    width: 33%;
+}
+
+.footer-location-icon{
+    color: white;
+    font-size: 20px;
+    margin-right: 14px;
+    margin-top: 1px;
+}
+
+.footer-phone-icon{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+
+.footer-mail-icon{
+    color: white;
+    font-size: 17px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.social-media-item{
+    height: 20px;
+    width: 20px;
+    padding: 7px;
+    margin-right: 14px;
+    list-style: none;
+    border-radius: 50%;
+    background-color: #4f83d1;
+    transition: all 0.5s;
+}
+
+.social-media-item:hover{
+    background-color: #7cb8eb;
+}
+
+.social-media-icon{
+    color: white;
+    padding-top: 2px;
+}
+
+.footer-right-section{
+    width: 26%;
+}
+
+.featured-block{
+    padding: 20px;
+}
+
+.footer-bottom{
+    border-top: 2px solid #7fbcf0;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.copyright-section{
+    width: 50%;
+}
+
+.copyright-txt{
+    color: #f0f8ff;
+    font-size: 14px;
+    margin-right: 30px;
+    margin-bottom: 0 !important;
+}
+
+.tooplate-section{
+    width: 50%;
+    text-align: right !important;
+}
+
+.tooplate{
+    color: white;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.tooplate:hover{
+    color: #4f83d1;
+}
+/* FOOTER...........END */
+
+/* HOMEPAGE-PAGE.....
+..................END */
+
+
+/* ABOUT-PAGE.........
+................START */
+
+/* ABOUT-BANNER-SECTION.........
+..........................START */
+
+.about-section-banner{
+    background-image: url('images/high-angle-woman-cleaning-floors.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about-us-parent{
+    width: 58%;
+    padding: 0 8px;
+}
+
+.about-heading{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.side-nav{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto !important;
+}
+
+.side-nav-ol{
+    color: white;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-ol-link:hover{
+    color: #4f83d1;
+}
+
+/* ABOUT-BANNER-SECTION.........
+..........................END */
+
+/* INTRO-ABOUT-SECTION.........
+..........................START */
+
+.about-intro-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.about-intro-section-img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.about-intro-heading{
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.get-in-touch{
+    position: relative;
+    top: 35px;
+}
+
+/* INTRO-ABOUT-SECTION.........
+..........................END */
+
+
+/* ABOUT-CUSTOMER-SECTION.....
+.......................START */
+
+.about-customer{
+    background: #f0f8ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.customer-div{
+    width: 23%;
+    margin-right: 16px;
+}
+
+.about-customer-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.about-customer-info{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.about-customer-info::before {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-right: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+}
+
+.about-customer-name{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.about-customer-contact-details{
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid #dee2e6;
+}
+
+.about-customer-icon{
+    font-size: 19px;
+    margin-right: 4px;
+}
+
+.about-customer-link{
+    color: #717275;
+    transition: 0.3s;
+}
+
+.about-customer-link:hover{
+    color: #4f83d1;
+}
+
+/* ABOUT-CUSTOMER-SECTION......
+..........................END */
+
+/* ABOUT-PAGE.........
+................END */
+
+
+/* CONTACT-PAGE.......
+.................START */
+
+/* CONTACT-SECTION..........
+....................START */
+
+.contact-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: white;
+}
+
+.contact-left-section{
+    width: 40%;
+    padding: 0 8px;
+    margin-right: auto !important;
+}
+
+.contact-info{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.contact-info-heading{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.contact-detail{
+    color: #717275;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact-info-icon{
+    color: #4f83d1;
+    font-size: 32px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.contact-info-links{
+    color: #717275;
+    transition: 0.3s;
+}
+
+.contact-info-links:hover{
+    color: #4f83d1;
+}
+
+.conatct-info-number{
+    margin-left: 5px;
+}
+
+.conatct-info-location{
+    margin-left: 12px;
+}
+
+.contact-right-section{
+    width: 50%;
+    padding: 0 8px;
+}
+
+.contact-form{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    position: relative;
+    overflow: hidden;
+    padding: 45px;
+}
+
+.form-heading{
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.form-input{
+    display: block;
+    width: 208px;
+    color: #717275;
+    margin-bottom: 24px;
+    padding: 13px 10px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    appearance: none;
+}
+
+.form-input:hover{
+    border-color: #4f83d1;
+}
+
+.form-input:focus{
+    border-color: #4f83d1;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25)
+}
+
+.form-select{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-image: url('images/download.svg');
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-btn-div{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50%;
+}
+
+textarea{
+    resize: vertical;
+    width: 96% !important;
+}
+
+.sumbit-btn{
+    background: #4f83d1;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.sumbit-btn:hover{
+    background-color: #7cb8eb;
+}
+
+/* CONTACT-SECTION..........
+....................END */
+
+/* CONTACT-PAGE.......
+.................END */
+
+
+/* SERVICES-PAGE.....
+..................START */
+
+/* SERVICES-SECTION...........
+....................START */
+
+.services-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-bg{
+    background-color: #f0f8ff !important;
+}
+
+/* SERVICES-SECTION...........
+....................END */
+
+/* SERVICES-PAGE.....
+..................END */
+
+
+/* PAGE-404.....
+................START */
+
+
+/* 404-SECTION.........
+...............START */
+
+.page-404-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main-txt-404{
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.title-404{
+    font-size: 10rem;
+    font-weight: 700;
+    color: #4f83d1;
+    line-height: 1.2;
+}
+
+.sub-title-404{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* 404-SECTION.........
+...............END */
+
+
+/* PAGE-404.....
+................END */
+
+
+/* COMING-SOON-PAGE........
+.................START */
+
+
+/* COMING-SOON-SECTION......
+..........................START */
+
+.coming-soon-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.coming-soon-main-content{
+    text-align: center !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding: 0 24px;
+    width: 66.66666667%;
+
+}
+
+.countdown{
+    text-align: center;
+    padding-left: 0;
+}
+
+.countdown-item{
+    list-style: none;
+    flex: 0 0 13%;
+    margin: 15px;
+}
+
+.countdown-title{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.countdown-txt{
+    background: #f0f8ff;
+    color: #4f83d1;
+    border-radius: 6px;
+    position: relative;
+    padding: 4px 8px;
+    font-size: 16px;
+}
+
+.countdown-txt::before{
+    content: "";
+    display: block;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid #f0f8ff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    left: 0;
+}
+
+.coming-soon-heading{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* COMING-SOON-SECTION......
+..........................END */
+
+/* COMING-SOON-PAGE........
+.................END */
+
+/* SERVICES-DETAIL-PAGE ........
+........................START*/
+
+/* SERVICES-DETAIL-SECTION ........
+........................START*/
+
+.services-detail-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services-detail-left-section{
+    width: 48%;
+    margin-right: 24px;
+}
+
+.services-detail-right-section{
+    width: 48%;
+}
+
+.services-detail-info{
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.services-detail-heading{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.services-detail-links{
+    color: #7cb8eb;
+    transition: 0.3s;
+}
+
+.services-detail-links:hover{
+    color: #4f83d1;
+}
+
+.services-detail-sub-heading{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* SERVICES-DETAIL-SECTION ........
+........................END*/
+
+
+/* PHOTO-GALLERY-SECTION.........
+.........................START */
+
+.photo-gallery-section{
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.photo-gallery-section-img{
+    width: 32%;
+}
+
+.gallery-img{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.gallery-img:hover{
+    transform: scale(1.02);
+}
+
+/* PHOTO-GALLERY-SECTION.........
+.........................END */
+
+
+/* RELATED-SERVICES-SECTION.......
+............................START */
+
+.related-services-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f0f8ff;
+}
+
+/* RELATED-SERVICES-SECTION.......
+............................END */
+
+/* SERVICES-DETAIL-PAGE ........
+........................END*/
